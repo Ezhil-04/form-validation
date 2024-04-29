@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/fa8acceed4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+         
+        <div class="wrapper">
+           <form action="">
+            <div class="input-group">
+                <label for="name">Full Name</label>
+                <input id="nameinput" type="text" name="name" class="inputs"> <span id="namespan"> </span>
+            </div>
+            <div class="input-group">
+                <label for="phno">Phone Number</label>
+                <input id="phnoinput" type="text" name="phno" class="inputs"><span id="phnospan"> </span>
+            </div>
+            <div class="input-group">
+                <label for="email">E-mail</label>
+                <input id="emailinput" type="text" name="email" class="inputs"><span id="emailspan"> </span>
+            </div>
+            <div class="input-group">
+                <label for="msg">Message</label>
+            <textarea id="msginput" name="msg"  cols="40" rows="7" class="inputs"></textarea>
+            <span id="msgspan"> </span>
+            </div>
+
+            <button onclick="return validateform()" id="submitbtn">Submit</button>
+            <span id="submitspan"></span>
+        </form>
+        </div>
+
+<div class="slogan">
+    <div class="text"><h2 id="stay">Stay</h2>
+        <h1>Connected </h1>
+        <h2 id="stay">with us</h2></div>
+    
+
+</div>
+
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

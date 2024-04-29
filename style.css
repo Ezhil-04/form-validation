@@ -1,0 +1,315 @@
+
+.cedarville-cursive-regular {
+    font-family: "Cedarville Cursive", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+:root{
+    --input-bg: rgb(230, 230, 230);
+
+}
+
+.exo-2{
+  font-family: "Exo 2", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+body{
+    height:auto;
+    width:100vw;
+ 
+
+}
+.container{
+    height:100vh;
+    width:100%;
+   padding: 2rem;
+    background-color: #ffc8e4;
+    display:flex;
+    align-items:center;
+    justify-content: space-around;
+    /* flex-wrap: wrap; */
+       /* overflow: hidden; */
+   
+
+
+}
+.wrapper{
+    padding:1rem;
+    margin:1rem;
+    /* width: 40%; */ 
+    transition: height 2s ease-in-out;
+  background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    width: 50%;
+    backdrop-filter: blur(40px);
+    box-shadow: -3px -3px 15px rgb(83, 78, 78);
+}
+.input-group{
+    margin:1rem 0rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ 
+    position: relative;
+}
+.input-group label{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 560;
+    color: rgb(0, 0, 0);
+
+}
+.input-group input{
+  
+    padding: 0 .5rem;
+    /* margin-left: 2rem; */
+    height: 2.5rem;
+    width: 70%;
+    border:0 ;
+    outline:0;
+    border-radius:5px;
+    font-size: 1rem;
+    font-weight: 550;
+    background-color:var(--input-bg);
+    /* background-color:#FF8474; */
+
+}
+#msginput{
+    width: 70%;
+    resize: none;
+    border:0;
+    outline:0;
+    border-radius:5px;
+    font-size: .8rem;
+    padding: .5rem .5rem;
+    font-weight: 500;
+    line-height: 1rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color: var(--input-bg);
+}
+
+#submitbtn{
+    border:1.5px solid black;
+    background-color: transparent;
+    outline:0;
+    width: 100%;
+    height: 2.5rem;
+    font-weight: 700;
+    font-size: 1rem;
+   letter-spacing: 2px;
+    border-radius: 5px;
+    /* box-shadow: 12px 12px 24px #9fa4b3, -12px -12px 24px #ffffff; */
+    transition: all .3s  ease-in-out;
+    margin: 1rem 0;
+}
+#submitbtn:hover{
+    border: 0;
+    outline: 0;
+    background-color:#583D72 ;
+    color: white;
+}
+
+.slogan{
+    padding: 1rem;
+    padding-left: 2rem;
+    height: 100%;
+width: 50%;
+
+/* background-color: cornflowerblue; */
+display: flex;
+align-items: center;
+justify-content: space-between;
+
+}
+#stay{
+    font-size: 8vw;
+    /* margin: 2rem 0; */
+
+    font-family: "Cedarville Cursive", cursive;
+}
+.slogan h1{
+font-size: 8vw;
+color: rgb(86, 9, 102);
+font-family: "Exo 2", sans-serif;
+
+}
+.input-group span{
+    font-size: small;
+    position:absolute;
+    right:15px;
+    color: red;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+
+}
+#msgspan{
+    bottom: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#submitspan{
+    /* position: absolute;
+   bottom:0;
+   left: 5px; */
+   font-size: small;
+   margin-top: 1rem;
+    color: red;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.inputs:focus{
+box-shadow: inset -2px -2px 5px rgb(107, 107, 107);
+}
+
+
+@media only screen  and (min-width:850px) and (max-width:970px) {
+    body{
+        height: auto;
+        /* background-color: aqua; */
+    }
+    .container{
+        height: auto;
+        padding: 1rem;
+        padding-top: 5rem;
+        
+        
+    }
+    .wrapper{
+        
+        margin: 0;
+        margin-bottom:2rem ;
+        width: 50%;
+    }
+    .input-group{
+        padding: 0%;
+       
+        display: grid;
+        width: 100%;
+       
+    }
+
+
+    .input-group input{
+       box-sizing: border-box;
+        margin: 0;
+        width: 43vw;
+    }
+    #msginput{
+        width: 43vw;
+    }
+ 
+    #stay{
+        font-size: 7vw;
+    }
+    .slogan h1{
+        font-size: 8vw;
+    }
+    .slogan{
+       
+        margin: 0;
+        margin-left: 2rem;
+        padding: 0;
+    }
+    .input-group span{
+        font-size: small;
+        position:absolute;
+        bottom: 10px;
+        right:18px;
+        color: red;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+    
+    }
+}
+
+
+@media only screen and (max-width:849px) {
+    body{
+        height: auto;
+        background-color: aqua;
+    }
+    .container{
+        height: auto;
+        padding: 1rem;
+        padding-top: 5rem;
+        display: grid;
+        
+    }
+    .wrapper{
+        
+        margin: 0;
+        margin-bottom:2rem ;
+        width: 60vw;
+    }
+    .input-group{
+        padding: 0%;
+       
+        display: grid;
+        width: 100%;
+        
+    }
+
+
+    .input-group input{
+       box-sizing: border-box;
+        margin: 0;
+        width: 55.5vw;
+    }
+    #msginput{
+ 
+        width: 55.5vw;
+    }
+    #submitbtn{
+        background-color:#583D72 ;
+        color: aliceblue;
+        border: 0;
+        outline: 0;
+    }
+    #stay{
+        font-size: 2rem;
+    }
+    .slogan h1{
+        font-size: 4rem;
+    }
+    .slogan{
+        margin: 0;
+        padding: 0;
+    }
+    .input-group span{
+        font-size: small;
+        position:absolute;
+        bottom: 10px;
+        right:18px;
+        color: red;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+    
+    }
+}
+
+
+
+
+@media only screen and (max-width:599px){
+
+    .wrapper{
+        width: 90vw;
+        
+    }
+    .input-group input{
+        width: 82.5vw;
+    }
+    #msginput{
+        width: 82.5vw;
+    }
+    .input-group span{
+        bottom: 10px;
+      right: 18px;
+    }
+}
